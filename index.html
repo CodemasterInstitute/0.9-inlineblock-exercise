@@ -1,0 +1,59 @@
+<html>
+<head>
+	<style>
+
+		.wrapper{
+			margin: auto;
+			width: 960px;
+		}
+		
+		section{
+			background-color: blue;
+		}
+		
+		section img{
+			display: inline-block;
+		}
+		
+		section article{
+			display: inline-block;
+			width: 600px;
+			background-color: red;
+			/* by default, inline elements will try and sit on the same baseline (like text) */
+			vertical-align: top; 
+		}
+		
+		article .square{
+			display: inline-block;
+			width: 50%;
+			height: 100px;
+			background-color: yellow;
+		}
+		
+		/* that bloody four pixel gap */
+		.removegap{
+			margin-left: -4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			
+			<img src="http://placehold.it/360x250" />
+			
+			<article class="removegap">
+				<h1>Header</h1>
+				<p>blah blah blah blah blah blah blah blah blah blah 
+					blah blah blah blah blah blah blah blah blah blah 
+					blah blah blah blah blah blah blah blah blah blah 
+				</p>
+				<div class="square">Hello</div>
+				<div class="square removegap">Hello</div>
+			</article>
+			
+		</section>
+	</div>
+</body>	
+	
+</html>
